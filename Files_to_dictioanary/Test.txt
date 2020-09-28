@@ -2,3 +2,6 @@ bob,engineer
 harry,carpenter
 vrinda,developer
 aasha,driver
+keshav,cook
+ii,oo
+ hari,teacher

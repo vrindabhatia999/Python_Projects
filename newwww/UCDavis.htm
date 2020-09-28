@@ -1,0 +1,1018 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-371467-1", {"cookieDomain":"auto"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("send", "pageview");ga('create', 'UA-398023-53', 'auto', 'globalTracker');
+ga('globalTracker.send', 'pageview');
+ga('create', 'UA-75813690-2', 'auto', 'globalTrackerSiteFarm');
+ga('globalTrackerSiteFarm.send', 'pageview');</script>
+<link rel="canonical" href="https://cpe.ucdavis.edu/subject-areas/website-design-and-development" />
+<meta name="description" content="Knowing how to design and build functional websites is a huge asset in any industry today. In our Website Design and Development courses and programs, you’ll learn the market-driven skills needed to succeed in any web environment. Offered online, the courses cover everything from basic website design with HTML5 and CSS to programming with JavaScript and web app creation with AJAX. And no prior web or programming experience is required." />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b987bbcebd",applicationID:"22566840"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta http-equiv="apple-mobile-web-app-capable" content="yes" />
+<link rel="shortcut icon" href="/sites/g/files/dgvnsk4886/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="application/rss+xml" title="Website Design and Development Content" href="https://cpe.ucdavis.edu/taxonomy/term/1921/feed" />
+<script src="/sites/g/files/dgvnsk4886/files/google_tag/primary/google_tag.script.js?q8phxc" defer></script>
+
+    <title>Website Design-Tutorial | UC Davis-</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/dgvnsk4886/files/css/css_viZ4tWbNAJOUflKKJym66MIq0itFKxcCPzXRc6_9KhY.css?q8phxc" />
+<link rel="stylesheet" media="all" href="/sites/g/files/dgvnsk4886/files/css/css_kVFhmrGG0Q-izADg3xPLbykPjEYhJAnXIullDXuUwTw.css?q8phxc" />
+
+<!--[if lte IE 8]>
+<link rel="stylesheet" media="all" href="/sites/g/files/dgvnsk4886/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css?q8phxc" />
+<![endif]-->
+<link rel="stylesheet" media="all" href="/sites/g/files/dgvnsk4886/files/css/css_dZQdt9_fFEww4FAWyap03uuIQ5HGrqz1maIrzRAti80.css?q8phxc" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/dgvnsk4886/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/sites/g/files/dgvnsk4886/files/js/js_SPaMoitgAj3AZnhKPBp70ofoysQg0YfhMUaYm_2_J0M.js"></script>
+
+      <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0006/1809.js" async="async"></script>
+  </head>
+  <body class="path-taxonomy">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHNDTDX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="layout-container">
+
+  <header class="l-header header" role="banner">
+    <div class="header__bar ">
+      <a href="#primary-nav" class="nav-toggle js-nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle Main Menu">
+        <span class="nav-toggle__icon nav-toggle__icon--menu">Menu</span>
+      </a>
+      <div class="header__fixed-site-name"><a href="/" title="Home" rel="home">UC Davis Continuing and Professional Education</a></div>
+      <div class="l-container">
+        <a href="https://www.ucdavis.edu/"><img src="/themes/contrib/sitefarm_one/images/uc-logo-white.svg" class="ucd-logo " alt="UC Davis Logo" /></a>
+                    <div class="region region-header-top">
+    
+
+<nav aria-labelledby="block-topmenu-menu" id="block-topmenu" class="block-topmenu--2">
+            
+      <h2 class="panel__title visually-hidden" id="block-topmenu-menu">Top Menu</h2>
+    
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://extensionpv.ucdavis.edu/coursebasket/publicCourseBasket.do?method=load&amp;_ga=2.117253830.1586709875.1535383907-1149725988.1505539135">Shopping Cart</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/" title="Sign In" data-drupal-link-system-path="&lt;front&gt;">Sign In</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://extensionpv.ucdavis.edu/portal/logon.do?method=load&amp;_ga=2.49743974.1586709875.1535383907-1149725988.1505539135" title="Log Into Student Account">Student Account</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://cpeonline.ucdavis.edu/login/canvas" title="Sign into online classes">Online Class Login</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://extensionpv.ucdavis.edu/portal/logonInstructor.do?method=load&amp;_ga=2.175967714.1586709875.1535383907-1149725988.1505539135" title="Sign in as an instructor">Instructor Login</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+              </div>
+    </div>
+      <div class="region region-header">
+    <div id="block-cpe-branding" class="block block-system block-system-branding-block">
+    
+    
+    <div class="header__branding">
+  <div class="l-container o-media">
+    
+    <div class="o-media__body">
+              <h1 class="header__site-name">
+          <a href="/" title="Home" rel="home">UC Davis Continuing and Professional Education</a>
+        </h1>
+                  
+    </div>
+  </div>
+</div>
+</div>
+
+  </div>
+
+    <div class="l-navbar navbar menu--closed">
+      <div class="l-container--navigation off-canvas off-canvas--left">
+        <div class="off-canvas__container">
+            <div class="region region-navigation">
+    <div class="search-block-form l-search-popup" data-drupal-selector="search-block-form" id="block-cpe-search" role="search">
+  <button class="search-popup__open js-search-popup__open">Open Search</button>
+  <div class="search-popup">
+    <button class="search-popup__close"><span class="search-popup__close-icon">Close Search</span></button>
+    <div class="search-popup__container">
+              <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label">
+      <label for="edit-keys" class="visually-hidden">Search the site:</label>
+        <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" placeholder="Search" required="required" class="search-popup__input form-search" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--2"><input data-drupal-selector="edit-submit" class="search-popup__submit js-form-submit form-submit" type="submit" id="edit-submit--2" value="Search" />
+</div>
+
+</form>
+
+          </div>
+  </div>
+</div>
+
+
+<nav aria-labelledby="block-cpe-main-menu-menu" id="block-cpe-main-menu" class="primary-nav primary-nav--superfish primary-nav--nested">
+            
+      <h2 class="panel__title visually-hidden" id="block-cpe-main-menu-menu">Main navigation (extended config)</h2>
+    
+
+        
+              <ul class="menu">
+                    <li class="menu-item menu-item--expanded">
+                  <a href="/courses-programs">Courses &amp; Programs<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a>
+                        <ul class="menu">
+                    <li class="menu-item menu-item--expanded">
+                  <a href="/areas-of-study">Areas of Study<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a>
+                        <ul class="menu">
+                    <li class="menu-item">
+                  <a href="/areas-study/autism-spectrum-disorder" data-drupal-link-system-path="taxonomy/term/481">Autism Spectrum Disorder</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/brewing" data-drupal-link-system-path="taxonomy/term/486">Brewing</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/business" data-drupal-link-system-path="taxonomy/term/491">Business</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/conflict-resolution" data-drupal-link-system-path="taxonomy/term/496">Conflict Resolution</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/education" data-drupal-link-system-path="taxonomy/term/501">Education</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/equine-programs" data-drupal-link-system-path="taxonomy/term/536">Equine Programs</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/health-sciences" data-drupal-link-system-path="taxonomy/term/511">Health Sciences</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://humanservices.ucdavis.edu">Human Services</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/leadership" data-drupal-link-system-path="taxonomy/term/551">Leadership</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/occupational-health-and-safety" data-drupal-link-system-path="taxonomy/term/506">Occupational Health and Safety</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/planning-and-sustainability" data-drupal-link-system-path="taxonomy/term/521">Planning and Sustainability</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/sensory-and-food-science" data-drupal-link-system-path="taxonomy/term/466">Sensory and Food Science</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/technology-and-information-management" data-drupal-link-system-path="taxonomy/term/516">Technology and Information Management</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/winemaking" data-drupal-link-system-path="taxonomy/term/531">Winemaking</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="/programs">Programs<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a>
+                        <ul class="menu">
+                    <li class="menu-item">
+                  <a href="/certificate-programs" data-drupal-link-system-path="node/2121">Certificate Programs</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/free-information-sessions-and-webinars" data-drupal-link-system-path="taxonomy/term/541">Free Information Sessions and Webinars</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/masters-degree-and-post-baccalaureate-programs" data-drupal-link-system-path="node/2846">Master&#039;s Degree Programs</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/online-programs" data-drupal-link-system-path="taxonomy/term/546">Online Programs</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/areas-study/osher-lifelong-learning-institute" data-drupal-link-system-path="taxonomy/term/526">Osher Lifelong Learning Institute</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/about-us/corporate-education" data-drupal-link-system-path="node/2836">Corporate Education</a>
+              </li>
+                <li class="menu-item">
+                  <a href="https://precollege.ucdavis.edu">UC Davis Pre-College Program</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/digital-badges" data-drupal-link-system-path="node/202061">Badge Programs</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="/areas-study/online-programs">Online Learning<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a>
+                        <ul class="menu">
+                    <li class="menu-item">
+                  <a href="/areas-study/online-programs" data-drupal-link-system-path="taxonomy/term/546">Online Programs</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/student-services/online-resources" data-drupal-link-system-path="node/298596">Resources for Online Learning</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/online-programs/coursera" data-drupal-link-system-path="node/274361">UC Davis on Coursera</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="https://cie.ucdavis.edu/">International</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="/student-services">Student Services<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a>
+                        <ul class="menu">
+                    <li class="menu-item">
+                  <a href="/student-services" data-drupal-link-system-path="node/2041">General Information</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/contact-us" data-drupal-link-system-path="node/2116">Contact Us</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+                  <a href="/open-campus" data-drupal-link-system-path="node/2881">Open Campus</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+                  <a href="/about-us">About Us<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a>
+                        <ul class="menu">
+                    <li class="menu-item">
+                  <a href="/about-us" data-drupal-link-system-path="node/2806">General Information</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/about-us/corporate-education" data-drupal-link-system-path="node/2836">Corporate Education</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/about-us/partner-with-us" data-drupal-link-system-path="node/130231">Campus Partners</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/news" data-drupal-link-system-path="news">News</a>
+              </li>
+                <li class="menu-item">
+                  <a href="/instructors" data-drupal-link-system-path="node/130216">Instructor Resources</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+
+                        <div class="region region-quick-links">
+    <div class="l-quick-links">
+  <h2 id="block-cpe-quicklinks-menu">
+    <a href="#" class="quick-links__title" aria-controls="quick-links" aria-expanded="false" aria-label="Toggle Quick Links Menu">
+      Quick Links
+      <span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span>
+    </a>
+  </h2>
+  <nav aria-labelledby="block-cpe-quicklinks-menu" id="block-cpe-quicklinks" class="quick-links u-hidden--visually">
+              
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/contact-us" data-drupal-link-system-path="node/2116">Contact Us</a>
+              </li>
+                <li class="menu-item">
+        <a href="/corporate-education">Corporate Education</a>
+              </li>
+                <li class="menu-item">
+        <a href="/student-services/financing-your-education" data-drupal-link-system-path="node/1896">Financing Your Education</a>
+              </li>
+                <li class="menu-item">
+        <a href="/student-services/directions" data-drupal-link-system-path="node/1866">Directions</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://ucdavis.box.com/shared/static/ieafa03ix46twu4yn5l78s10bnhzhfyv.pdf">Download Our Spring Course Catalog</a>
+              </li>
+        </ul>
+  
+
+
+      </nav>
+</div>
+
+  </div>
+
+                  </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="l-main">
+    <a id="main-content" tabindex="-1"></a>
+      <div class="region region-page-title">
+    
+<div id="block-coronavirusmessage" class="category-brand--wine-grape block block-block-content block-block-content11b1cde4-80f9-4ef2-ae1b-f213b25a9015 1">
+    <section class="brand-textbox category-brand__background">
+      
+        
+          
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><h4 style="text-align: center;"><a href="https://cpe.ucdavis.edu/news/coronavirus-campus-updates-and-text-alerts">COVID-19 Updates—Spring classes moving online—Click for details.</a></h4></div>
+      
+        </section>
+  </div>
+<div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-cpe-page-title" class="block block-core block-page-title-block">
+    
+    
+        <div class="page-title page-title--banner">
+  
+            <div class="page-title__title--nested">
+        <h1 class="page-title__title category-brand__text--knock-out">Website Design and Development</h1>
+          </div>
+      <img src="/sites/g/files/dgvnsk4886/files/styles/sf_title_banner/public/2018-10/GettyImages-686721341_0.jpg?h=f2fcf546&amp;itok=WWQIAzix" width="2000" height="460" alt="team designing a website" title="" typeof="foaf:Image" class="image-style-sf-title-banner" />
+
+
+        
+</div>
+
+  </div>
+
+  </div>
+
+
+    
+    <div class="l-container ">
+      
+
+              
+      
+      
+      <section class=" l-davis--flipped   ">
+                  
+          <div class="l-content">
+            <div class="region region-content">
+    <div id="block-cpe-content" class="block block-system block-system-main-block panel o-box o-box--large">
+    
+    
+        <div class="views-element-container"><div class="view view-taxonomy-term view-id-taxonomy_term view-display-id-page_1 js-view-dom-id-df812f4ca5748783760ec842a4a61690c1fd20089857cbfd7091d1ca5b9f1fce">
+  
+    
+      <div class="view-header">
+      <div about="/subject-areas/website-design-and-development" id="taxonomy-term-1921" class="taxonomy-term vocabulary-subject-areas">
+  
+    
+  <div class="content">
+    
+            <div class="clearfix text-formatted field field--name-description field--type-text-long field--label-hidden field__item"><p><span><span>Knowing how to design and build functional websites is a huge asset in any industry today. In our Website Design and Development courses and programs, you’ll learn the market-driven skills needed to succeed in any web environment. Offered online, the courses cover everything from basic website design with HTML5 and CSS to programming with JavaScript and web app creation with AJAX. And no prior web or programming experience is required. </span></span></p>
+
+</div>
+      
+  </div>
+</div>
+
+    </div>
+      
+  
+        </div>
+</div>
+
+  </div>
+<div class="views-element-container block block-views block-views-blocksections-open-for-enrollment-block-1 panel o-box" id="block-views-block-sections-open-for-enrollment-block-1">
+    
+      <h2 class="panel__title">Sections Open for Enrollment</h2>
+    
+        <div><div class="view view-sections-open-for-enrollment view-id-sections_open_for_enrollment view-display-id-block_1 js-view-dom-id-d88fadbe41031015f6144bb797e03caa9ef84c76ecd3447fa2780721ac56b3f8">
+  
+    
+      
+      <div class="view-content ">
+      <table class="views-table views-view-table cols-4">
+        <thead>
+      <tr>
+                                                  <th id="view-title-table-column" class="views-field views-field-title" scope="col">Course Title</th>
+                                                  <th id="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method" scope="col">Online</th>
+                                                  <th id="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text" scope="col">Enroll</th>
+                                                  <th id="view-field-start-date-table-column" class="views-field views-field-field-start-date" scope="col">Start Date</th>
+              </tr>
+    </thead>
+    <tbody>
+          <tr>
+                                                                                        <td headers="view-title-table-column" class="views-field views-field-title"><a href="/section/creating-web-applications-ajax" hreflang="en">Creating Web Applications with AJAX</a>          </td>
+                                                                                        <td headers="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method"><img alt="check mark" src="/core/misc/icons/73b355/check.svg" />          </td>
+                                                                                        <td headers="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text">      <a class="btn" href="https://extensionpv.ucdavis.edu/search/publicCourseSearchDetails.do?method=addToCart&amp;isPageDisplayed=TRUE&amp;cspIndex=33693019&amp;parentSite=https%3A%2F%2Fextension.ucdavis.edu">Enroll Now</a>
+            </td>
+                                                                                        <td headers="view-field-start-date-table-column" class="views-field views-field-field-start-date"><time datetime="2020-04-06T12:00:00Z" class="datetime">04/06/2020</time>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-title-table-column" class="views-field views-field-title"><a href="/section/web-design-and-production" hreflang="en">Web Design and Production</a>          </td>
+                                                                                        <td headers="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method"><img alt="check mark" src="/core/misc/icons/73b355/check.svg" />          </td>
+                                                                                        <td headers="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text">      <a class="btn" href="https://extensionpv.ucdavis.edu/search/publicCourseSearchDetails.do?method=addToCart&amp;isPageDisplayed=TRUE&amp;cspIndex=33694494&amp;parentSite=https%3A%2F%2Fextension.ucdavis.edu">Enroll Now</a>
+            </td>
+                                                                                        <td headers="view-field-start-date-table-column" class="views-field views-field-field-start-date"><time datetime="2020-04-06T12:00:00Z" class="datetime">04/06/2020</time>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-title-table-column" class="views-field views-field-title"><a href="/section/server-side-scripting-php" hreflang="en">Server-Side Scripting with PHP</a>          </td>
+                                                                                        <td headers="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method"><img alt="check mark" src="/core/misc/icons/73b355/check.svg" />          </td>
+                                                                                        <td headers="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text">      <a class="btn" href="https://extensionpv.ucdavis.edu/search/publicCourseSearchDetails.do?method=addToCart&amp;isPageDisplayed=TRUE&amp;cspIndex=34431552&amp;parentSite=https%3A%2F%2Fextension.ucdavis.edu">Enroll Now</a>
+            </td>
+                                                                                        <td headers="view-field-start-date-table-column" class="views-field views-field-field-start-date"><time datetime="2020-04-07T12:00:00Z" class="datetime">04/07/2020</time>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-title-table-column" class="views-field views-field-title"><a href="/section/web-development-fast-track-certificate" hreflang="en">Web Development Fast Track Certificate</a>          </td>
+                                                                                        <td headers="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method"><img alt="check mark" src="/core/misc/icons/73b355/check.svg" />          </td>
+                                                                                        <td headers="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text">      <a class="btn" href="https://extensionpv.ucdavis.edu/search/publicCourseSearchDetails.do?method=addToCart&amp;isPageDisplayed=TRUE&amp;cspIndex=35741234&amp;parentSite=https%3A%2F%2Fcpe.ucdavis.edu">Enroll Now</a>
+            </td>
+                                                                                        <td headers="view-field-start-date-table-column" class="views-field views-field-field-start-date"><time datetime="2020-06-22T12:00:00Z" class="datetime">06/22/2020</time>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-title-table-column" class="views-field views-field-title"><a href="/section/user-interaction-design-web" hreflang="en">User Interaction Design for the Web</a>          </td>
+                                                                                        <td headers="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method"><img alt="check mark" src="/core/misc/icons/73b355/check.svg" />          </td>
+                                                                                        <td headers="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text">      <a class="btn" href="https://extensionpv.ucdavis.edu/search/publicCourseSearchDetails.do?method=addToCart&amp;isPageDisplayed=TRUE&amp;cspIndex=33702198&amp;parentSite=https%3A%2F%2Fextension.ucdavis.edu">Enroll Now</a>
+            </td>
+                                                                                        <td headers="view-field-start-date-table-column" class="views-field views-field-field-start-date"><time datetime="2020-06-24T12:00:00Z" class="datetime">06/24/2020</time>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-title-table-column" class="views-field views-field-title"><a href="/section/web-programming-javascript" hreflang="en">Web Programming with JavaScript</a>          </td>
+                                                                                        <td headers="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method"><img alt="check mark" src="/core/misc/icons/73b355/check.svg" />          </td>
+                                                                                        <td headers="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text">      <a class="btn" href="https://extensionpv.ucdavis.edu/search/publicCourseSearchDetails.do?method=addToCart&amp;isPageDisplayed=TRUE&amp;cspIndex=33701373&amp;parentSite=https%3A%2F%2Fextension.ucdavis.edu">Enroll Now</a>
+            </td>
+                                                                                        <td headers="view-field-start-date-table-column" class="views-field views-field-field-start-date"><time datetime="2020-06-29T12:00:00Z" class="datetime">06/29/2020</time>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-title-table-column" class="views-field views-field-title"><a href="/section/creating-functional-websites" hreflang="en">Creating Functional Websites</a>          </td>
+                                                                                        <td headers="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method"><img alt="check mark" src="/core/misc/icons/73b355/check.svg" />          </td>
+                                                                                        <td headers="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text">      <a class="btn" href="https://extensionpv.ucdavis.edu/search/publicCourseSearchDetails.do?method=addToCart&amp;isPageDisplayed=TRUE&amp;cspIndex=34962674&amp;parentSite=https%3A%2F%2Fextension.ucdavis.edu">Enroll Now</a>
+            </td>
+                                                                                        <td headers="view-field-start-date-table-column" class="views-field views-field-field-start-date"><time datetime="2020-06-30T12:00:00Z" class="datetime">06/30/2020</time>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-title-table-column" class="views-field views-field-title"><a href="/section/creating-web-applications-ajax-0" hreflang="en">Creating Web Applications with AJAX</a>          </td>
+                                                                                        <td headers="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method"><img alt="check mark" src="/core/misc/icons/73b355/check.svg" />          </td>
+                                                                                        <td headers="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text">      <a class="btn" href="https://extensionpv.ucdavis.edu/search/publicCourseSearchDetails.do?method=addToCart&amp;isPageDisplayed=TRUE&amp;cspIndex=34431687&amp;parentSite=https%3A%2F%2Fextension.ucdavis.edu">Enroll Now</a>
+            </td>
+                                                                                        <td headers="view-field-start-date-table-column" class="views-field views-field-field-start-date"><time datetime="2020-06-30T12:00:00Z" class="datetime">06/30/2020</time>
+          </td>
+              </tr>
+          <tr>
+                                                                                        <td headers="view-title-table-column" class="views-field views-field-title"><a href="/section/database-design-development-and-management" hreflang="en">Database Design- Development and Management</a>          </td>
+                                                                                        <td headers="view-field-instruction-method-table-column" class="views-field views-field-field-instruction-method"><img alt="check mark" src="/core/misc/icons/73b355/check.svg" />          </td>
+                                                                                        <td headers="view-field-enroll-button-text-table-column" class="views-field views-field-field-enroll-button-text">      <a class="btn" href="https://extensionpv.ucdavis.edu/search/publicCourseSearchDetails.do?method=addToCart&amp;isPageDisplayed=TRUE&amp;cspIndex=34431583&amp;parentSite=https%3A%2F%2Fextension.ucdavis.edu">Enroll Now</a>
+            </td>
+                                                                                        <td headers="view-field-start-date-table-column" class="views-field views-field-field-start-date"><time datetime="2020-06-30T12:00:00Z" class="datetime">06/30/2020</time>
+          </td>
+              </tr>
+      </tbody>
+</table>
+
+    </div>
+  
+        </div>
+</div>
+
+  </div>
+<div id="block-mhucdavistechbootcamps" class="category-brand--admin-blue l-sibling-grid--half block block-block-content block-block-content2c603efe-da68-477d-a2ce-e722a867a329 panel">
+    
+    
+      <a href="https://bootcamp.ucdavis.edu/?utm_source=university-coursepage&amp;utm_campaign=102017&amp;utm_medium=webpage" class="marketing-highlight ">
+    <div class="marketing-highlight__image">
+      
+            <div class="field field--name-field-sf-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/dgvnsk4886/files/styles/sf_landscape_4x3/public/images/marketing_highlight/coding_bootcamp_55.jpg?h=51a72048&amp;itok=bCOoZUXX" width="640" height="480" alt="student coding" typeof="foaf:Image" class="image-style-sf-landscape-4x3" />
+
+
+</div>
+      
+    </div>
+    <div class="marketing-highlight__body">
+            <h3 class="marketing-highlight__title category-brand__text">UC Davis Tech Boot Camps</h3>
+              <p>24-week intensive programs in Coding, Cybersecurity and Data Analytics</p>
+                </div>
+  </a>
+  
+</div>
+<div id="block-fbfreeinformationsession" class="category-brand--admin-blue l-sibling-grid--half focus-box block block-block-content block-block-content62d9fc7d-a458-4bc7-a437-a81288905d08 panel">
+    
+    
+      <div class="focus-box__image">
+    
+            <div class="field field--name-field-sf-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/dgvnsk4886/files/styles/sf_focus_box/public/images/focus_box/web-dev%5B1%5D_1.jpg?h=58381bed&amp;itok=BEL4zc8j" width="1000" height="380" alt="Student with laptop" typeof="foaf:Image" class="image-style-sf-focus-box" />
+
+
+</div>
+      
+  </div>
+  <h3 class="focus-box__title category-brand__text--knock-out">Free Information Session</h3>
+  <div class="focus-box__body category-brand__background--lighten">
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><span><span><span><span><span><span><a href="https://youtu.be/UhGc_US1LBE">Watch our latest information session webinar</a></span></span></span></span></span></span></p>
+
+</div>
+      
+  </div>
+</div>
+<div class="views-element-container block block-views block-views-blockcourses-not-currently-scheduled-block-1 panel o-box" id="block-views-block-courses-not-currently-scheduled-block-1">
+    
+      <h2 class="panel__title">Courses Not Currently Scheduled</h2>
+    
+        <div><div class="view view-courses-not-currently-scheduled view-id-courses_not_currently_scheduled view-display-id-block_1 js-view-dom-id-b86726fecee78ea4ab817c6f9157ea0ff6f5e4a4732eab2cecb3c14203b5a923">
+  
+    
+      
+      <div class="view-content ">
+      <table class="views-table views-view-table cols-2">
+        <thead>
+      <tr>
+                                                  <th id="view-title-table-column--2" class="views-field views-field-title" scope="col">Course Title</th>
+                                                  <th id="view-nothing-table-column" class="views-field views-field-nothing" scope="col">Notify Me</th>
+              </tr>
+    </thead>
+    <tbody>
+          <tr>
+                                                                                        <td headers="view-title-table-column--2" class="views-field views-field-title"><a href="/course/web-development-online-information-session" hreflang="en">Web Development Online Information Session</a>          </td>
+                                                                                        <td headers="view-nothing-table-column" class="views-field views-field-nothing"><a class="btn" href="https://extensionpv.ucdavis.edu/public/student/studentRequestInformation.do?method=edit&amp;type=0&amp;courseNumber=73270&amp;notify=section&amp;parentSite=https%3A%2F%2Fcpe.ucdavis.edu%2F">Notify Me</a>          </td>
+              </tr>
+      </tbody>
+</table>
+
+    </div>
+  
+        </div>
+</div>
+
+  </div>
+
+  </div>
+
+          </div>
+                      <aside class="l-sidebar-second" role="complementary">
+                <div class="region region-sidebar-second">
+    <div id="block-webform-30" class="block block-webform block-webform-block panel o-box">
+    
+      <h2 class="panel__title">Get More Info</h2>
+    
+        <form class="webform-submission-form webform-submission-add-form webform-submission-sub-web-dev-form webform-submission-sub-web-dev-add-form webform-submission-sub-web-dev-taxonomy_term-1921-form webform-submission-sub-web-dev-taxonomy_term-1921-add-form js-webform-submit-once js-webform-details-toggle webform-details-toggle" data-drupal-selector="webform-submission-sub-web-dev-taxonomy-term-1921-add-form" action="/subject-areas/website-design-and-development" method="post" id="webform-submission-sub-web-dev-taxonomy-term-1921-add-form" accept-charset="UTF-8">
+  
+  <div data-drupal-selector="edit-personal-info-flex" class="webform-flexbox js-webform-flexbox js-form-wrapper form-wrapper" id="edit-personal-info-flex"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-first-name form-item-first-name">
+      <label for="edit-first-name" class="js-form-required form-required">First Name</label>
+        <input data-drupal-selector="edit-first-name" type="text" id="edit-first-name" name="first_name" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true" />
+
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-last-name form-item-last-name">
+      <label for="edit-last-name" class="js-form-required form-required">Last Name</label>
+        <input data-drupal-selector="edit-last-name" type="text" id="edit-last-name" name="last_name" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true" />
+
+        </div>
+</div></div></div>
+<fieldset id="edit-email--wrapper" class="webform-email-confirm--wrapper fieldgroup form-composite webform-composite-hidden-title js-webform-type-webform-email-confirm webform-type-webform-email-confirm js-form-item form-item js-form-wrapper form-wrapper">
+      <legend>
+    <span class="visually-hidden fieldset-legend">Email</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <div class="js-form-item form-item js-form-type-email form-type-email js-form-item-email-mail-1 form-item-email-mail-1">
+      <label for="edit-email-mail-1" class="js-form-required form-required">Email</label>
+        <input data-drupal-selector="edit-email-mail-1" class="webform-email form-email required" type="email" id="edit-email-mail-1" name="email[mail_1]" value="" size="60" maxlength="254" required="required" aria-required="true" />
+
+        </div>
+<div class="js-form-item form-item js-form-type-email form-type-email js-form-item-email-mail-2 form-item-email-mail-2">
+      <label for="edit-email-mail-2" class="js-form-required form-required">Confirm email</label>
+        <input data-drupal-selector="edit-email-mail-2" class="webform-email-confirm form-email required" type="email" id="edit-email-mail-2" name="email[mail_2]" value="" size="60" maxlength="254" required="required" aria-required="true" />
+
+        </div>
+
+          </div>
+</fieldset>
+<div class="js-form-item form-item js-form-type-tel form-type-tel js-form-item-mobile-phone form-item-mobile-phone">
+      <label for="edit-mobile-phone" class="js-form-required form-required">Mobile Phone</label>
+        <input data-drupal-selector="edit-mobile-phone" type="tel" id="edit-mobile-phone" name="mobile_phone" value="" size="30" maxlength="128" class="form-tel required" required="required" aria-required="true" />
+
+        </div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-email-opt-in form-item-email-opt-in">
+        <input style="float: left; margin-top: 10px;" data-drupal-selector="edit-email-opt-in" type="checkbox" id="edit-email-opt-in" name="email_opt_in" value="1" class="form-checkbox required" required="required" aria-required="true" />
+
+        <label style="margin-left: 20px; display: block;" for="edit-email-opt-in" class="option js-form-required form-required">Yes, I agree that the information I provide will be maintained by UC Davis Continuing and Professional Education and others working on its behalf for the purpose of contacting me by email and/or text message about programs of interest.</label>
+      </div>
+<div data-webform-terms-of-service-type="modal" class="form-type-webform-terms-of-service js-form-type-webform-terms-of-service js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-privacy form-item-privacy">
+        <input style="visibility: hidden;" data-drupal-selector="edit-privacy" type="checkbox" id="edit-privacy" name="privacy" value class="form-checkbox" />
+
+        <label for="edit-privacy" class="option"><a role="button" href="#terms">Your privacy is important to us!</a></label>
+          <div class="description">
+      <div id="edit-privacy--description" class="webform-element-description"><div id="webform-terms-of-service-privacy--description" class="webform-terms-of-service-details js-hide"><div class="webform-terms-of-service-details--title">Privacy Information</div>
+<div class="webform-terms-of-service-details--content"><p>We do not share your information with other organizations for commercial purposes.</p>
+
+<p>We only collect your information if you have subscribed to receive communications from us.</p>
+
+<p>If you want to unsubscribe, there is a link to do so at the bottom of every email.</p>
+
+<p>For any questions or concerns about the privacy of your information, you can email us at <a href="mailto:cpeinfo@ucdavis.edu">cpeinfo@ucdavis.edu</a>.</p>
+
+<p>Read the full <a href="https://www.ucdavis.edu/help/privacy-accessibility" target="_blank">Privacy Policy</a>.</p>
+</div>
+</div>
+</div>
+
+    </div>
+  </div>
+<fieldset style="display: none;" data-drupal-selector="edit-programs-you-are-interested-in" class="webform-has-field-prefix checkboxes--wrapper fieldgroup form-composite webform-composite-visible-title required js-webform-type-checkboxes webform-type-checkboxes js-form-item form-item js-form-wrapper form-wrapper" id="edit-programs-you-are-interested-in--wrapper">
+      <legend>
+    <span class="fieldset-legend js-form-required form-required">What programs are you interested in?</span>
+  </legend>
+  <div class="fieldset-wrapper">
+              <span class="field-prefix"><div class="description">Please choose all that apply.</div></span>
+        <div id="edit-programs-you-are-interested-in" class="js-webform-checkboxes webform-options-display-one-column form-checkboxes"><div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-programs-you-are-interested-in-a013600000kunaraaq form-item-programs-you-are-interested-in-a013600000kunaraaq">
+        <input style="display: none;" data-drupal-selector="edit-programs-you-are-interested-in-a013600000kunaraaq" type="checkbox" id="edit-programs-you-are-interested-in-a013600000kunaraaq" name="programs_you_are_interested_in[a013600000kunaRAAQ]" value="a013600000kunaRAAQ" checked="checked" class="form-checkbox" />
+
+        <label for="edit-programs-you-are-interested-in-a013600000kunaraaq" class="option">Website Design &amp; Development</label>
+      </div>
+</div>
+
+          </div>
+</fieldset>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-send-mail form-item-send-mail">
+        <input data-drupal-selector="edit-send-mail" type="checkbox" id="edit-send-mail" name="send_mail" value="1" class="form-checkbox" />
+
+        <label for="edit-send-mail" class="option">Please also send information via mail.</label>
+      </div>
+<fieldset data-drupal-selector="edit-mailing" data-drupal-states="{&quot;invisible&quot;:{&quot;.webform-submission-sub-web-dev-taxonomy_term-1921-add-form :input[name=\u0022send_mail\u0022]&quot;:{&quot;unchecked&quot;:true}}}" id="edit-mailing" class="js-webform-type-fieldset webform-type-fieldset js-form-item form-item js-form-wrapper form-wrapper">
+      <legend>
+    <span class="fieldset-legend">Mailing Address</span>
+  </legend>
+  <div class="fieldset-wrapper">
+            <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-company-name form-item-company-name">
+      <label for="edit-company-name">Company Name</label>
+        <input data-drupal-selector="edit-company-name" type="text" id="edit-company-name" name="company_name" value="" size="60" maxlength="255" class="form-text" />
+
+        </div>
+<div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-mailing-address form-item-mailing-address">
+      <label for="edit-mailing-address">Mailing Address</label>
+        <input data-drupal-selector="edit-mailing-address" type="text" id="edit-mailing-address" name="mailing_address" value="" size="60" maxlength="255" class="form-text" />
+
+        </div>
+<div data-drupal-selector="edit-mailing-flex" class="webform-flexbox js-webform-flexbox js-form-wrapper form-wrapper" id="edit-mailing-flex"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-city form-item-city">
+      <label for="edit-city">City</label>
+        <input data-drupal-selector="edit-city" type="text" id="edit-city" name="city" value="" size="60" maxlength="255" class="form-text" />
+
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="webform-element-help-container--title webform-element-help-container--title-after js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-state-province form-item-state-province">
+      <label for="edit-state-province">State<span class="webform-element-help" role="tooltip" tabindex="0" data-webform-help="&lt;div class=&quot;webform-element-help--title&quot;&gt;State&lt;/div&gt;&lt;div class=&quot;webform-element-help--content&quot;&gt;Enter N/A if none.&lt;/div&gt;"><span aria-hidden="true">?</span></span></label>
+        <input data-drupal-selector="edit-state-province" type="text" id="edit-state-province" name="state_province" value="" size="60" maxlength="255" class="form-text" />
+
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-zip-postal-code form-item-zip-postal-code">
+      <label for="edit-zip-postal-code">Zip</label>
+        <input data-drupal-selector="edit-zip-postal-code" type="text" id="edit-zip-postal-code" name="zip_postal_code" value="" size="60" maxlength="255" class="form-text" />
+
+        </div>
+</div></div></div>
+<div data-drupal-selector="edit-mailing-flex-2" class="webform-flexbox js-webform-flexbox js-form-wrapper form-wrapper" id="edit-mailing-flex-2"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-select form-type-select js-form-item-country form-item-country">
+      <label for="edit-country">Country</label>
+        <select data-drupal-selector="edit-country" id="edit-country" name="country" class="form-select"><option value="" selected="selected">- None -</option><option value="UNITED STATES">UNITED STATES</option><option value="AFGHANISTAN">AFGHANISTAN</option><option value="ALBANIA">ALBANIA</option><option value="ALGERIA">ALGERIA</option><option value="ANDORRA">ANDORRA</option><option value="ANGOLA">ANGOLA</option><option value="ANGUILLA">ANGUILLA</option><option value="ANTIGUA AND BARBUDA">ANTIGUA AND BARBUDA</option><option value="ARGENTINA">ARGENTINA</option><option value="ARMENIA">ARMENIA</option><option value="ARUBA">ARUBA</option><option value="ASCENSION">ASCENSION</option><option value="AUSTRALIA">AUSTRALIA</option><option value="AUSTRIA">AUSTRIA</option><option value="AZERBAIJAN">AZERBAIJAN</option><option value="AZORES">AZORES</option><option value="BAHAMAS">BAHAMAS</option><option value="BAHRAIN">BAHRAIN</option><option value="BANGLADESH">BANGLADESH</option><option value="BARBADOS">BARBADOS</option><option value="BELARUS">BELARUS</option><option value="BELGIUM">BELGIUM</option><option value="BELIZE">BELIZE</option><option value="BENIN">BENIN</option><option value="BERMUDA">BERMUDA</option><option value="BHUTAN">BHUTAN</option><option value="BOLIVIA">BOLIVIA</option><option value="BONAIRE">BONAIRE</option><option value="BOSNIA-HERZEGOVINA">BOSNIA-HERZEGOVINA</option><option value="BOTSWANA">BOTSWANA</option><option value="BRAZIL">BRAZIL</option><option value="BRITISH VIRGIN ISLANDS">BRITISH VIRGIN ISLANDS</option><option value="BRUNEI DARUSSALAM">BRUNEI DARUSSALAM</option><option value="BULGARIA">BULGARIA</option><option value="BURKINA FASO">BURKINA FASO</option><option value="BURUNDI">BURUNDI</option><option value="CAMBODIA">CAMBODIA</option><option value="CAMEROON">CAMEROON</option><option value="CANADA">CANADA</option><option value="CAPE VERDE">CAPE VERDE</option><option value="CAYMAN ISLANDS">CAYMAN ISLANDS</option><option value="CENTRAL AFRICAN REPUBLIC">CENTRAL AFRICAN REPUBLIC</option><option value="CHAD">CHAD</option><option value="CHILE">CHILE</option><option value="CHINA">CHINA</option><option value="COLOMBIA">COLOMBIA</option><option value="COMOROS ISLANDS">COMOROS ISLANDS</option><option value="CORSICA">CORSICA</option><option value="COSTA RICA">COSTA RICA</option><option value="COTE D&#039;IVOIRE">COTE D&#039;IVOIRE</option><option value="CROATIA">CROATIA</option><option value="CUBA">CUBA</option><option value="CURACAO">CURACAO</option><option value="CYPRUS">CYPRUS</option><option value="CZECH REPUBLIC">CZECH REPUBLIC</option><option value="DEM REP OF THE CONGO">DEM REP OF THE CONGO</option><option value="DENMARK">DENMARK</option><option value="DJIBOUTI">DJIBOUTI</option><option value="DOMINICA">DOMINICA</option><option value="DOMINICAN REPUBLIC">DOMINICAN REPUBLIC</option><option value="ECUADOR">ECUADOR</option><option value="EGYPT">EGYPT</option><option value="EL SALVADOR">EL SALVADOR</option><option value="EQUATORIAL GUINEA">EQUATORIAL GUINEA</option><option value="ERITREA">ERITREA</option><option value="ESTONIA">ESTONIA</option><option value="ETHIOPIA">ETHIOPIA</option><option value="FALKLAND ISLANDS">FALKLAND ISLANDS</option><option value="FAROE ISLANDS">FAROE ISLANDS</option><option value="FIJI">FIJI</option><option value="FINLAND">FINLAND</option><option value="FRANCE">FRANCE</option><option value="FRENCH GUIANA">FRENCH GUIANA</option><option value="FRENCH POLYNESIA">FRENCH POLYNESIA</option><option value="GABON">GABON</option><option value="GAMBIA">GAMBIA</option><option value="GEORGIA">GEORGIA</option><option value="GERMANY">GERMANY</option><option value="GHANA">GHANA</option><option value="GIBRALTAR">GIBRALTAR</option><option value="GREAT BRITAIN">GREAT BRITAIN</option><option value="GREECE">GREECE</option><option value="GREENLAND">GREENLAND</option><option value="GRENADA">GRENADA</option><option value="GUADELOUPE">GUADELOUPE</option><option value="GUATEMALA">GUATEMALA</option><option value="GUINEA">GUINEA</option><option value="GUINEA-BISSAU">GUINEA-BISSAU</option><option value="GUYANA">GUYANA</option><option value="HAITI">HAITI</option><option value="HONDURAS">HONDURAS</option><option value="HONG KONG">HONG KONG</option><option value="HUNGARY">HUNGARY</option><option value="ICELAND">ICELAND</option><option value="INDIA">INDIA</option><option value="INDONESIA">INDONESIA</option><option value="IRAN">IRAN</option><option value="IRAQ">IRAQ</option><option value="IRELAND">IRELAND</option><option value="ISRAEL">ISRAEL</option><option value="ITALY">ITALY</option><option value="JAMAICA">JAMAICA</option><option value="JAPAN">JAPAN</option><option value="JORDAN">JORDAN</option><option value="KAZAKHSTAN">KAZAKHSTAN</option><option value="KENYA">KENYA</option><option value="KIRIBATI">KIRIBATI</option><option value="KOSOVO (UNMIK)">KOSOVO (UNMIK)</option><option value="KUWAIT">KUWAIT</option><option value="KYRGYZSTAN">KYRGYZSTAN</option><option value="LAOS">LAOS</option><option value="LATVIA">LATVIA</option><option value="LEBANON">LEBANON</option><option value="LESOTHO">LESOTHO</option><option value="LIBERIA">LIBERIA</option><option value="LIBYA">LIBYA</option><option value="LIECHTENSTEIN">LIECHTENSTEIN</option><option value="LITHUANIA">LITHUANIA</option><option value="LUXEMBOURG">LUXEMBOURG</option><option value="MACAO">MACAO</option><option value="MACEDONIA">MACEDONIA</option><option value="MADAGASCAR">MADAGASCAR</option><option value="MADEIRA ISLANDS">MADEIRA ISLANDS</option><option value="MALAWI">MALAWI</option><option value="MALAYSIA">MALAYSIA</option><option value="MALDIVES">MALDIVES</option><option value="MALI">MALI</option><option value="MALTA">MALTA</option><option value="MARTINIQUE">MARTINIQUE</option><option value="MAURITANIA">MAURITANIA</option><option value="MAURITIUS">MAURITIUS</option><option value="MEXICO">MEXICO</option><option value="MOLDOVA">MOLDOVA</option><option value="MONACO">MONACO</option><option value="MONGOLIA">MONGOLIA</option><option value="MONTSERRAT">MONTSERRAT</option><option value="MOROCCO">MOROCCO</option><option value="MOZAMBIQUE">MOZAMBIQUE</option><option value="MYANMAR">MYANMAR</option><option value="NAMIBIA">NAMIBIA</option><option value="NAURU">NAURU</option><option value="NEPAL">NEPAL</option><option value="NETHERLANDS">NETHERLANDS</option><option value="NETHERLANDS ANTILLES">NETHERLANDS ANTILLES</option><option value="NEW CALEDONIA">NEW CALEDONIA</option><option value="NEW ZEALAND">NEW ZEALAND</option><option value="NICARAGUA">NICARAGUA</option><option value="NIGER">NIGER</option><option value="NIGERIA">NIGERIA</option><option value="NORTH KOREA">NORTH KOREA</option><option value="NORWAY">NORWAY</option><option value="OMAN">OMAN</option><option value="PAKISTAN">PAKISTAN</option><option value="PALESTINE">PALESTINE</option><option value="PANAMA">PANAMA</option><option value="PAPUA NEW GUINEA">PAPUA NEW GUINEA</option><option value="PARAGUAY">PARAGUAY</option><option value="PERU">PERU</option><option value="PHILIPPINES">PHILIPPINES</option><option value="PITCAIRN ISLAND">PITCAIRN ISLAND</option><option value="POLAND">POLAND</option><option value="PORTUGAL">PORTUGAL</option><option value="QATAR">QATAR</option><option value="REP OF THE CONGO">REP OF THE CONGO</option><option value="REUNION">REUNION</option><option value="ROMANIA">ROMANIA</option><option value="RUSSIA">RUSSIA</option><option value="RWANDA">RWANDA</option><option value="SABA">SABA</option><option value="SAINT CHRISTOPHER AND NEVIS">SAINT CHRISTOPHER AND NEVIS</option><option value="SAINT EUSTATIUS">SAINT EUSTATIUS</option><option value="SAINT HELENA">SAINT HELENA</option><option value="SAINT KITTS &amp; NEVIS">SAINT KITTS &amp; NEVIS</option><option value="SAINT LUCIA">SAINT LUCIA</option><option value="SAINT MAARTEN">SAINT MAARTEN</option><option value="SAINT PIERRE AND MIQUELEON">SAINT PIERRE AND MIQUELEON</option><option value="SAN MARINO">SAN MARINO</option><option value="SAO TOME AND PRINCIPE">SAO TOME AND PRINCIPE</option><option value="SAUDI ARABIA">SAUDI ARABIA</option><option value="SENEGAL">SENEGAL</option><option value="SERBIA">SERBIA</option><option value="SEYCHELLES">SEYCHELLES</option><option value="SIERRA LEONE">SIERRA LEONE</option><option value="SINGAPORE">SINGAPORE</option><option value="SLOVAK REPUBLIC">SLOVAK REPUBLIC</option><option value="SLOVENIA">SLOVENIA</option><option value="SOLOMON ISLANDS">SOLOMON ISLANDS</option><option value="SOMALIA">SOMALIA</option><option value="SOUTH AFRICA">SOUTH AFRICA</option><option value="SOUTH KOREA">SOUTH KOREA</option><option value="SPAIN">SPAIN</option><option value="SRI LANKA">SRI LANKA</option><option value="ST VINCENT AND THE GRENADINES">ST VINCENT AND THE GRENADINES</option><option value="SUDAN">SUDAN</option><option value="SURINAME">SURINAME</option><option value="SWAZILAND">SWAZILAND</option><option value="SWEDEN">SWEDEN</option><option value="SWITZERLAND">SWITZERLAND</option><option value="SYRIA">SYRIA</option><option value="TAIWAN">TAIWAN</option><option value="TAJIKISTAN">TAJIKISTAN</option><option value="TANZANIA">TANZANIA</option><option value="THAILAND">THAILAND</option><option value="TIMOR LESTE">TIMOR LESTE</option><option value="TOGO">TOGO</option><option value="TONGA">TONGA</option><option value="TRINIDAD AND TOBAGO">TRINIDAD AND TOBAGO</option><option value="TRISTAN DA CUNHA">TRISTAN DA CUNHA</option><option value="TUNISIA">TUNISIA</option><option value="TURKEY">TURKEY</option><option value="TURKMENISTAN">TURKMENISTAN</option><option value="TURKS AND CAICOS ISLANDS">TURKS AND CAICOS ISLANDS</option><option value="TUVALU">TUVALU</option><option value="UGANDA">UGANDA</option><option value="UKRAINE">UKRAINE</option><option value="UNITED ARAB EMIRATES">UNITED ARAB EMIRATES</option><option value="URUGUAY">URUGUAY</option><option value="UZBEKISTAN">UZBEKISTAN</option><option value="VANUATU">VANUATU</option><option value="VATICAN CITY">VATICAN CITY</option><option value="VENEZUELA">VENEZUELA</option><option value="VIETNAM">VIETNAM</option><option value="WALLIS AND FUTUNA ISLANDS">WALLIS AND FUTUNA ISLANDS</option><option value="WESTERN SAMOA">WESTERN SAMOA</option><option value="YEMEN">YEMEN</option><option value="ZAIRE">ZAIRE</option><option value="ZAMBIA">ZAMBIA</option><option value="ZIMBABWE">ZIMBABWE</option></select>
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-tel form-type-tel js-form-item-phone-number form-item-phone-number">
+      <label for="edit-phone-number">Daytime Phone</label>
+        <input data-drupal-selector="edit-phone-number" type="tel" id="edit-phone-number" name="phone_number" value="" size="30" maxlength="128" class="form-tel" />
+
+        </div>
+</div></div></div>
+
+          </div>
+</fieldset>
+<input data-drupal-selector="edit-form-type" type="hidden" name="form_type" value="subject_area" />
+<input data-drupal-selector="edit-how-did-you-hear" type="hidden" name="how_did_you_hear" value="[current-page:query:sf]" />
+<input data-drupal-selector="edit-utm-content" type="hidden" name="utm_content" value="[current-page:query:tracking]" />
+<input autocomplete="off" data-drupal-selector="form-o8lajojueekflxrwxib9n9wz0oxktkh1-0xec8t6fla" type="hidden" name="form_build_id" value="form-O8laJOJUeekfLXRWXIb9N9wZ0OXktKH1_0XeC8t6FLA" />
+<input data-drupal-selector="edit-webform-submission-sub-web-dev-taxonomy-term-1921-add-form" type="hidden" name="form_id" value="webform_submission_sub_web_dev_taxonomy_term_1921_add_form" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input class="webform-button--submit button button--primary js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Submit" />
+
+</div>
+
+
+  
+</form>
+
+  </div>
+<div class="views-element-container block block-views block-views-blockcertificates-by-subject-area-block-1 panel o-box" id="block-views-block-certificates-by-subject-area-block-1">
+    
+      <h2 class="panel__title">Certificates and Programs</h2>
+    
+        <div><div class="view view-certificates-by-subject-area view-id-certificates_by_subject_area view-display-id-block_1 js-view-dom-id-ee5ed9700692e8b51b94c1942e13041a6e931d3aa37b85ec59725ed67f19a751">
+  
+    
+      
+      <div class="view-content ">
+                      <div class="views-row">
+        <div class="views-field views-field-title"><span class="field-content"><a href="/certificate-program/web-development-certificate-program" hreflang="en">Web Development Certificate Program</a></span></div>
+      </div>
+                    <div class="views-row">
+        <div class="views-field views-field-title"><span class="field-content"><a href="/certificate-program/website-design-professional-concentration" hreflang="en">Website Design Professional Concentration</a></span></div>
+      </div>
+      
+    </div>
+  
+        </div>
+</div>
+
+  </div>
+
+<div id="block-webdevstudentreviews" class="category-brand--admin-blue block block-block-content block-block-content23f8ded1-0221-47b1-a942-f181e389bd82 panel o-box">
+      
+          <h2 class="panel__title">Student Reviews</h2>
+        
+          
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><span><span><span>“I used the websites I developed as final projects [in my classes] as portfolio websites during my job search.” </span></span></span><span><span><em><span>— Dilhari Peiris, Washington, D.C.</span></em></span></span></p>
+
+<ul class="list--arrow"><li><a href="/areas-study/technology-and-information-management/student-reviews"><span><span><span><span><span><span><span>Read more student reviews</span></span></span></span></span></span></span></a></li>
+</ul>
+
+</div>
+      
+      </div>
+
+<div id="block-webdevmeetourfaculty" class="category-brand--admin-blue block block-block-content block-block-content9795f82a-699d-4568-9137-d44c94925bb1 panel o-box">
+      
+          <h2 class="panel__title">Meet Our Faculty</h2>
+        
+          
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><span><span><span>“As we create new products and experiences for people, we have to take into consideration the whole user and how that product is going to fit into that user’s life.” </span></span></span><span><span><em><span>— Bill Mead, Instructor</span></em></span></span></p>
+
+<ul class="list--arrow"><li><a href="/news/instructor-spotlight-bill-mead"><span><span><span><span><span><span><span>More from this interview</span></span></span></span></span></span></span></a></li>
+	<li><a href="/areas-study/technology-and-information-management/instructor-biographies"><span><span><span><span><span><span><span>More about our instructors</span></span></span></span></span></span></span></a></li>
+</ul>
+
+</div>
+      
+      </div>
+
+<div id="block-webdevresourcesdownloads" class="category-brand--admin-blue block block-block-content block-block-content24050100-d86c-481a-a3d9-f7bd11459988 panel o-box">
+      
+          <h2 class="panel__title">Resources &amp; Downloads</h2>
+        
+          
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><ul class="list--arrow"><li><a href="https://cpe1.sf.ucdavis.edu/it-jobs-report"><span><span><span><span><span><span><span>Download our 2018-19 National IT Jobs Report </span></span></span></span></span></span></span></a></li>
+	<li><a href="https://ucdavis.box.com/shared/static/h6bj29my45780ay45ekw7l8yvpeu871w.pdf"><span><span><span><span><span><span><span>Download the course syllabus for </span></span></span></span></span><em><span>Creating Functional Websites</span></em></span></span></a></li>
+</ul>
+
+</div>
+      
+      </div>
+<div id="block-fbwebdevelopmentfreesamplelesson" class="category-brand--admin-blue focus-box block block-block-content block-block-contentc6ef9e42-2a55-4e26-a562-73749e7ba32b panel">
+    
+    
+      <div class="focus-box__image">
+    
+            <div class="field field--name-field-sf-image field--type-image field--label-hidden field__item">  <img src="/sites/g/files/dgvnsk4886/files/styles/sf_focus_box/public/images/focus_box/web%20dev%20background.jpg?h=c59f294b&amp;itok=a0W4Kg_n" width="1000" height="380" alt="Javascript" typeof="foaf:Image" class="image-style-sf-focus-box" />
+
+
+</div>
+      
+  </div>
+  <h3 class="focus-box__title category-brand__text--knock-out">Free Sample Lesson</h3>
+  <div class="focus-box__body category-brand__background--lighten">
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a href="/free-sample-lesson/web-dev"><span><span><span><span><span><span><span>Try out a free sample lesson from our JavaScript course</span></span></span></span></span></span></span></a></p>
+
+</div>
+      
+  </div>
+</div>
+
+  </div>
+
+            </aside>
+                        </section>
+
+          </div>
+
+  </main>
+
+  <footer class="l-footer footer" role="contentinfo">
+    <div class="l-container">
+        <div class="region region-footer flex-footer">
+                  <div class="flex-footer__item">
+          
+<div id="block-administrativeoffices" class="category-brand--admin-blue o-box block block-block-content block-block-content5e1fdeb2-6dd5-467a-be81-4dcd151dada1">
+      
+          <h2>Administrative Offices</h2>
+        
+          
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>1333 Research Park Dr.<br />
+Davis, CA 95618<br />
+(530) 757-8777<br /><a href="mailto:cpeinfo@ucdavis.edu">cpeinfo@ucdavis.edu</a></p>
+</div>
+      
+      </div>
+
+        </div>
+              <div class="flex-footer__item">
+          
+<div id="block-classrooms" class="category-brand--admin-blue o-box block block-block-content block-block-contented3430ae-02e7-4f54-8002-99dab5d15ff1">
+      
+          <h2>Classrooms</h2>
+        
+          
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>One Capitol Mall<br />
+1 Capitol Mall<br />
+Sacramento, CA 95814<br />
+(916) 327-0830<br />
+ <br />
+Da Vinci Building<br />
+1632 Da Vinci Ct.<br />
+Davis, CA 95618 </p>
+
+</div>
+      
+      </div>
+
+        </div>
+              <div class="flex-footer__item">
+          <div id="block-socialmedialinks-2" class="block-social-media-links o-box panel--transparent panel--auxilary block block-social-media-links-block">
+    
+      <h2>Follow Us on Social Media</h2>
+    
+      <div class="social-follow">
+    
+
+<ul class="social-media-links--platforms platforms vertical">
+      <li>
+      <a href="https://www.linkedin.com/school/ucdaviscpe"  aria-label="Follow us on LinkedIn" title="Follow us on LinkedIn" >
+        <img src="/profiles/sitefarm/modules/custom/sitefarm_custom_social_links/img/linkedin.svg" alt="LinkedIn" typeof="foaf:Image" />
+
+      </a>
+
+              
+        <span><a href="https://www.linkedin.com/school/ucdaviscpe" >LinkedIn</a></span>
+          </li>
+      <li>
+      <a href="https://www.instagram.com/ucdaviscpe"  aria-label="Follow us on Instagram" title="Follow us on Instagram" >
+        <img src="/profiles/sitefarm/modules/custom/sitefarm_custom_social_links/img/instagram.svg" alt="Instagram" typeof="foaf:Image" />
+
+      </a>
+
+              
+        <span><a href="https://www.instagram.com/ucdaviscpe" >Instagram</a></span>
+          </li>
+      <li>
+      <a href="https://www.youtube.com/channel/UCCpQejMlK4-Z3tgdXRpke0w?view_as=subscriber"  aria-label="Watch us on Youtube" title="Watch us on Youtube" >
+        <img src="/profiles/sitefarm/modules/custom/sitefarm_custom_social_links/img/youtube.svg" alt="Youtube" typeof="foaf:Image" />
+
+      </a>
+
+              
+        <span><a href="https://www.youtube.com/channel/UCCpQejMlK4-Z3tgdXRpke0w?view_as=subscriber" >Youtube</a></span>
+          </li>
+      <li>
+      <a href="https://www.twitter.com/ucdaviscpe"  aria-label="Follow us on Twitter" title="Follow us on Twitter" >
+        <img src="/profiles/sitefarm/modules/custom/sitefarm_custom_social_links/img/twitter.svg" alt="Twitter" typeof="foaf:Image" />
+
+      </a>
+
+              
+        <span><a href="https://www.twitter.com/ucdaviscpe" >Twitter</a></span>
+          </li>
+      <li>
+      <a href="https://www.facebook.com/ucdaviscpe"  aria-label="Like us on Facebook" title="Like us on Facebook" >
+        <img src="/profiles/sitefarm/modules/custom/sitefarm_custom_social_links/img/facebook.svg" alt="Facebook" typeof="foaf:Image" />
+
+      </a>
+
+              
+        <span><a href="https://www.facebook.com/ucdaviscpe" >Facebook</a></span>
+          </li>
+  </ul>
+
+  </div>
+</div>
+
+        </div>
+              <div class="flex-footer__item">
+          
+
+<nav aria-labelledby="block-cpe-footer-menu" id="block-cpe-footer" class="o-box footer-nav">
+      
+      <h2 class="panel__title" id="block-cpe-footer-menu">Partner Sites</h2>
+    
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.alumni.ucdavis.edu/">Cal Aggie Alumni Association</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://cie.ucdavis.edu/">International</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://precollege.ucdavis.edu">UC Davis Pre-College Program</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+        </div>
+            </div>
+
+
+      <div class="footer-spacer">
+        <hr class="footer-spacer__hr hr-invert">
+        <div class="footer-spacer__logo">
+          <a href="https://www.ucdavis.edu/"><img src="/themes/contrib/sitefarm_one/images/uc-logo-white.svg" class="ucd-logo" alt="UC Davis footer logo" /></a>
+        </div>
+      </div>
+
+        <div class="region region-footer-credits">
+    <div id="block-cpe-uccredits" class="uc-footer block block-uc-credits block-uc-credits-block">
+    
+    
+        
+      <p><a href="https://www.ucdavis.edu/">University of California, Davis</a>, One Shields Avenue, Davis, CA 95616 | 530-752-1011</p>
+    <ul class="list--pipe">
+        <li><a href="/contact-us">Questions or comments?</a></li>    <li><a href="http://ucdavis.edu/help/privacy-accessibility.html">Privacy & Accessibility</a></li>    <li><a href="http://occr.ucdavis.edu/poc/">Principles of Community</a></li>    <li><a href="http://www.universityofcalifornia.edu/">University of California</a></li>    <li><a href="/sitemap">Sitemap</a></li>    <li>Last update: April 12, 2020</li>  </ul>
+  <p>Copyright © The Regents of the University of California, Davis campus. All rights reserved.</p>
+</div>
+
+  </div>
+
+
+      <div class="u-align--center">This site is officially grown in <a href="https://sitefarm.ucdavis.edu">SiteFarm</a>.</div>
+
+    </div>
+  </footer>
+
+</div>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1612504335657506');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=1612504335657506&ev=PageView&noscript=1' /></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Twitter universal website tag code -->
+<script>
+  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  // Insert Twitter Pixel ID and Standard Event data below
+  twq('init','nzhfd');
+  twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+<!-- Google Adwords Conversion Code generated by drupal google_adwords_remarketing, campaign name: Remarketing -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 1066831687;
+  var google_conversion_language = "en";
+  var google_conversion_format = "1";
+  var google_conversion_color = "FFFFFF";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+</script>
+<script language="javaScript" type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1066831687/?value=0&amp;guid=ON&amp;script=0"/>
+</noscript>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"taxonomy\/term\/1921","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"anchor_link\/drupal.anchor_link,classy\/base,classy\/messages,core\/html5shiv,core\/normalize,cpe\/css_editor,cpe\/global-styles,footnotes\/footnotes,google_analytics\/google_analytics,sitefarm_one\/sitefarm_one,social_media_links\/social_media_links.theme,views\/views.module,webform\/webform.composite,webform\/webform.element.checkboxes,webform\/webform.element.details.save,webform\/webform.element.details.toggle,webform\/webform.element.flexbox,webform\/webform.element.help,webform\/webform.element.message,webform\/webform.element.options,webform\/webform.element.select,webform\/webform.element.terms_of_service,webform\/webform.form,webform\/webform.form.submit_once,webform\/webform.theme.classy","theme":"cpe","theme_token":null},"ajaxTrustedUrl":{"\/search\/node":true,"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"user":{"uid":0,"permissionsHash":"0bb6fad4014c068b0d8e4a3ab0d6f390c0ee39f772f8166f3c57bff211222789"}}</script>
+<script src="/sites/g/files/dgvnsk4886/files/js/js_99FUvnkeBLdyaLc9jsN_7BRuhXG7bbuDd54V2sbYZMQ.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b987bbcebd","applicationID":"22566840","transactionName":"ZAdTY0UHVxVRWhYNXV1NcFRDD1YIH30QEUJSDm10WBRcOnZWEAludQ1DWnUTUApUXBBJDEEHX1NSFGkKUVoHDF1fBlRFcQlLC3FaFg1dXQ==","queueTime":0,"applicationTime":653,"atts":"SEBQFQ0dRBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
