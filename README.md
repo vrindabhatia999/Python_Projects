@@ -6,3 +6,5 @@
 3. Files_ti_dict: Concert csv,txt etc ro dictionaries and access items easily. (In continuation)(pending).
 
 4. Console Apllication -Code asked in Applied IS coding round.✔ Code Functionality divided in modular pieces.
+
+5. All the important leetcode questions covering basic concepts, asked in interviews.🙋‍
