@@ -8,7 +8,7 @@ def setmis(nums):
             break
 
 
-    mis=set([i for i in range(1,n+1)]).difference(set(so))
+    mis=set([i for i in range(1,n+1)]).difference(set(so))   #i runs over inexes->1,2,3,4
 
     x=next(iter(mis))
 
