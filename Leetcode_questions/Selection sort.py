@@ -14,3 +14,5 @@ def selection(arr):
         arr[min_pos]=temp
 
 arr=[6,7,9,3]
+selection(arr)
+print(arr)
