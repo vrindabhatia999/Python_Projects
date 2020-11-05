@@ -11,6 +11,7 @@ def setmis(nums):
     mis=set([i for i in range(1,n+1)]).difference(set(so))   #i runs over inexes->1,2,3,4
 
     x=next(iter(mis))
+    # gives the next index of the itearable
 
 
     return[dup,x]
