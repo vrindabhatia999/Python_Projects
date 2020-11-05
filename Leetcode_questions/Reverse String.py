@@ -3,6 +3,7 @@ def Reverse(srr):
     left = 0
     right = len(srr) - 1
     while left < right:
+        #reverse the left and right index will stop at middle
         temp = srr[left]
         srr[left] = srr[right]
         srr[right] = temp
