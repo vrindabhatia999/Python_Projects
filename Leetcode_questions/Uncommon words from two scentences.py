@@ -21,3 +21,6 @@ def uncom(s1,s2):
 
 uncom("this apple is sweet","this apple is sour")
 
+#More faster and efficient ethod also available, 
+
+
